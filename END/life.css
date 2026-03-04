@@ -1,0 +1,189 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { height: 100%; font-family: Arial, sans-serif; color: #fff; }
+
+/* Background video */
+.bg-video {
+  position: fixed;
+  top: 50%; left: 50%;
+  min-width: 100%; min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Center header */
+.center-header {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+}
+.church-name {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+/* Heading */
+.main-heading {
+  text-align: left;
+  margin-top: 8rem;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.3);/* semi-transparent background */
+  backdrop-filter: blur(8px);          /* blur the content behind */
+  -webkit-backdrop-filter: blur(8px);  /* Safari support */
+  padding: 20px;                       /* space inside the box */
+  color: #111111;                         /* black text */
+  text-align: center;                  /* optional: center text */
+
+}
+
+/* Bottom video */
+.bottom-video-wrap {
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /*aligns to the lfet*/
+  box-shadow: 0 8px 30px rgba(0,0,0,0.7);
+  border: 1px solid rgba(255,255,255,0.04);
+  z-index: 3;
+  margin-bottom: 1rem;
+  margin-top: 4rem;
+  border-radius: 8px;
+  margin-right: 1rem;
+}
+
+/* Bottom video */
+.bottom-video-wrap2 {
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /*to the right*/
+  box-shadow: 0 8px 30px rgba(0,0,0,0.7);
+  border: 1px solid rgba(255,255,255,0.04);
+  z-index: 3;
+  margin-bottom: 1rem;
+  margin-top: 4rem;
+  border-radius: 8px;
+  margin-left: 1rem;
+}
+
+.logo-video {
+  width: 550px;
+  height: 450px;
+  max-width: 70%;
+}
+
+/* Welcome text */
+.welcome-text {
+  margin-top: 14px;
+  text-align: center;
+  font-family: "Tekton Pro", cursive, sans-serif;
+  font-size: 1.6rem;
+  background: rgba(17, 17, 17, 0.4);
+  backdrop-filter: blur(6px);
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 12px;
+}
+
+/* Pictures */
+.pictures {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.pic-item {
+  text-align: center;
+}
+.pic {
+  width: 300px;
+  height: 300px;
+  border: 2px solid #080808;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+/* Footer */
+.site-footer {
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  position: static;
+}
+.schedule span {
+  margin-right: 18px;
+  font-weight: bold;
+}
+/* Social icons */
+.social {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.social a {
+  margin-left: 15px;
+  color: #fff;
+  text-decoration: none;
+}
+.social svg { 
+    display: block;
+    width: 50px; 
+    height: 50px;
+}
+
+/*TikTok icon adjustment*/
+.social a[aria-label="TikTok"] svg {
+    fill: grey;
+}
+.social a.tiktok:hover svg {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 6px #25F4EE); /* cyan glow */
+}
+
+/* Facebook (blue) */
+.social a[aria-label="FaceBook"] svg {
+  fill: #1877F2; /* official Facebook blue */
+}
+.social a.facebook:hover svg {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 6px #1877F2); /* blue glow */
+}
+
+/* YouTube (red) */
+.social a[aria-label="YouTube"] svg {
+  fill: #FF0000; /* official YouTube red */
+}
+.social a.youtube:hover svg {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 6px #FF0000); /* red glow */
+}
+
+/* Locations */
+.locations {
+  left: 50%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.0rem;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
+    background: rgba(0, 0, 0, 0.5);
+}

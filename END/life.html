@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Welcome to the official website of the Saints' Assembly of God in South Africa.</title>
+  <link rel="stylesheet" href="life.css" />
+</head>
+<body>
+  <!-- Background video -->
+  <video id="bg-video" class="bg-video" autoplay muted loop playsinline>
+    <source src="video.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Centered logo + text -->
+  <header class="center-header">
+    <img src="logo.jpeg" alt="Logo" class="logo" />
+    <span class="church-name"><p>Saint's Assembly of God</p></span><br>
+  </header>
+
+  <!-- Main heading -->
+  <p>
+  <h1 class="main-heading"><b>Welcome to the official website of the Saints' Assembly of God in South Africa.
+          We aim to spread the gospel across many nations and make the name of Jesus Christ known in all
+          its beauty and truth. With prayer, praise, worship to the Lord through His ministers - the 
+          apostles, prophets, evangelists, pastors and teachers - every convocation day, we believe that
+          the Word does not return to God without having accomplished God's will for us (Isaiah 55:11).
+          If the Lord has been good to you, why not testify His name? Join us!</b></h1>
+  </p>
+
+  <!-- Bottom logo video -->
+  <div class="bottom-video-wrap">
+    <video id="logo-video" class="logo-video" autoplay loop playsinline controls>
+      <source src="set.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+<p>
+  <!-- Bottom logo video -->
+  <div class="bottom-video-wrap2">
+    <video id-uniqu="logo-video" class="logo-video" autoplay loop playsinline controls>
+      <source src="video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  </p>
+
+  <!-- Welcome text -->
+  <div class="welcome-text">Meet our pastors: </div>
+
+  <!-- Pictures section -->
+  <div class="pictures">
+    <div class="pic-item">
+      <img src="55.jpeg" alt="https://www.facebook.com/100052918896112/posts/1293162282457723/?mibextid=rS40aB7S9Ucbxw6vp" class="pic" />
+      <span>Pastor Austine Bienaime' Kalanda</span>
+    </div>
+    <div class="pic-item">
+      <img src="56.jpeg" alt="https://www.facebook.com/100052918896112/posts/1395380575569226/?mibextid=rS40aB7S9Ucbxw6v" class="pic" />
+      <span>Pastor Silas Kalume Kande</span>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="schedule">
+      <span><p>Tuesdays: 17:00-19:30</p></span>
+      <span><p>Fridays: 16:30-18:30</p></span>
+        <span><p>Sundays: 14:00-16:30</p></span>
+    </div>
+    <div class="social">
+      
+      <a href="https://www.facebook.com/saints.dejohannesburg/" target="_blank" aria-label="Facebook" class="Facebook">
+        <!-- Facebook SVG Icon -->
+        <svg width="45" height="45" viewbox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2.2V12h2.2V9.8c0-2.2 1.3-3.4 3.3-3.4.95 0 1.95.17 1.95.17v2.1h-1.07c-1.05 0-1.38.66-1.38 1.34V12h2.35l-.38 2.9h-1.97v7A10 10 0 0 0 22 12z"/></svg>
+      <path d="..." fill="currentColor"></path>
+    </a>
+    <a href="https://www.tiktok.com/@saintsassemblyofgodinsa?_r=1&_t=ZS-92Uy8FahbQg" target="_blank" aria-label="TikTok" class="TikTok">
+        <!-- TikTok SVG Icon -->
+        <svg width="45" height="45" viewbox="0 0 24 24" fill="currentColor"><path d="M12 2v10.5A4.5 4.5 0 1 1 9 8.5V6a6 6 0 1 0 3 0V2z"/></svg>
+      <path d="..." fill="currentColor"></path>
+    </a>
+      <a href="https://youtube.com/@saintsassemblyofgodinsa?si=iEbrdkkzdoo_NGZ3" target="_blank" aria-label="YouTube" class="YouTube">
+        <!-- YouTube SVG Icon -->
+        <svg width="45" height="45" viewbox="0 0 24 24" fill="currentColor"><path d="M23 7.5s-.2-1.6-.8-2.3c-.8-.9-1.7-.9-2.1-1C16.6 3.8 12 3.8 12 3.8h-.1s-4.6 0-7.9.4c-.4 0-1.3.1-2.1 1C1.2 5.9 1 7.5 1 7.5S1 9.3 1 11.1v1.8c0 1.8 0 3.6 0 3.6s.2 1.6.8 2.3c.8.9 1.9.9 2.4 1 1.7.2 7.1.4 7.1.4s4.6 0 7.9-.4c.4 0 1.3-.1 2.1-1 .6-.7.8-2.3.8-2.3s.1-1.8.1-3.6v-1.8c0-1.8-.1-3.6-.1-3.6zM9.8 15.1V8.9l5.2 3.1-5.2 3.1z"/></svg>
+      <path d="..." fill="currentColor"></path>
+    </a>
+    </div>
+  </footer>
+
+  <!-- Locations -->
+  <div class="locations">
+    <p>59 Urania Street, Observatory, Johannesburg.</p>
+    <p>21 The Curve Road, Observatory, Johannesburg</p>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+  const bgVideo = document.getElementById('bg-video');   // background video
+  const logoVideo = document.getElementById('logo-video'); // bottom video
+
+  // When the bottom video starts playing, pause the background
+  logoVideo.addEventListener('play', () => {
+    bgVideo.pause();
+  });
+
+  // When the bottom video is paused, resume the background
+  logoVideo.addEventListener('pause', () => {
+    bgVideo.play();
+  });
+
+  // When the bottom video finishes, resume the background
+  logoVideo.addEventListener('ended', () => {
+    bgVideo.play();
+  });
+});
+  </script>
+</body>
+</html>
